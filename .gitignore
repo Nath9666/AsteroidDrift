@@ -1,0 +1,66 @@
+# ============================================
+# AsteroidDrift — Unreal Engine 5 .gitignore
+# ============================================
+
+# --- Dossiers générés par Unreal (reconstruits automatiquement) ---
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/*
+!Build/**/*.ico
+
+# --- Plugins : on garde le code, pas les fichiers compilés ---
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# --- Visual Studio / Rider / VS Code ---
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.user
+*.code-workspace
+
+# --- Fichiers compilés C++ ---
+*.slo
+*.lo
+*.o
+*.obj
+*.pch
+*.dll
+*.dylib
+*.so
+*.lib
+*.a
+*.exe
+*.pdb
+*.ipch
+
+# --- Exports de rendu (vidéos, séquences d'images) ---
+# Les rendus Movie Render Queue vont dans Saved/ (déjà ignoré),
+# mais au cas où tu exportes ailleurs :
+Renders/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# --- Fichiers temporaires et système ---
+*.tmp
+*.log
+*.bak
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Fichiers de source externes lourds (garde-les hors du dépôt) ---
+# Décommente si tu ranges tes .blend / textures sources dans le projet :
+# SourceArt/
+# *.blend1
